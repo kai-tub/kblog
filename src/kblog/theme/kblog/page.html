@@ -1,0 +1,14 @@
+{# Layout: This is used by _every_ Sphinx content page #}
+{% extends "layout.html" %}
+
+{% block body %}
+{# Eliminate double-scrollbar issue that can arise with position:fixed modals #}
+<div id="fauxBody">
+  <header>
+    {% include "sections/main_header.html" %}
+  </header>
+  <main>
+    {{ body }}
+  </main>
+</div>
+{% endblock body %}

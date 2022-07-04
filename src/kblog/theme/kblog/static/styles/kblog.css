@@ -1,0 +1,54 @@
+/* RESET START */
+/* Null the margins of inconsistent elements */
+html,
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+fieldset,
+caption,
+table,
+tr,
+td,
+th,
+address,
+blockquote,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+/* remove the borders from images, fieldsets, and objects */
+img,
+fieldset,
+object {
+    border: none;
+}
+
+/* Fix safari flex behavior */
+/* Use border-box box-model by default */
+*,
+*:after,
+*:before {
+    /* safari bugfix */
+    flex: 1 0 auto;
+    box-sizing: border-box;
+}
+
+/* Give visual feedback to show that buttons are interactable */
+button,
+label {
+    cursor: pointer;
+}
